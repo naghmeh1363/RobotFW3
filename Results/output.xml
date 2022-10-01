@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.7.4 on win32)" generated="20221001 03:53:29.690" rpa="false" schemaversion="2">
+<suite id="s1" name="DeletingProductsFromCart" source="C:\Users\n.karimian\PycharmProjects\RobotFW2\Tests\DeletingProductsFromCart.robot">
+<test id="s1-t1" name="buy a mobile phone from digikala">
+<kw name="Start TestCase" library="CommonFunctionality">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${speed}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221001 03:53:29.963" endtime="20221001 03:53:29.963"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>${timeout}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20221001 03:53:29.963" endtime="20221001 03:53:29.963"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221001 03:53:29.963" level="INFO">Opening browser 'chrome' to base url 'https://www.digikala.com/'.</msg>
+<status status="PASS" starttime="20221001 03:53:29.963" endtime="20221001 03:54:07.360"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221001 03:54:07.360" endtime="20221001 03:54:07.632"/>
+</kw>
+<status status="PASS" starttime="20221001 03:53:29.963" endtime="20221001 03:54:07.632"/>
+</kw>
+<kw name="Login To Digikala" library="LoginTheStore">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@data-cro-id="header-profile"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 03:54:07.634" endtime="20221001 03:54:07.816"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@data-cro-id="header-profile"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 03:54:07.817" level="INFO">Clicking element '//a[@data-cro-id="header-profile"]'.</msg>
+<status status="PASS" starttime="20221001 03:54:07.817" endtime="20221001 03:54:08.427"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@type="text"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 03:54:08.428" endtime="20221001 03:54:08.693"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type="text"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221001 03:54:08.694" level="INFO">Typing text 'naghmeh_karimian@yahoo.com' into text field '//input[@type="text"]'.</msg>
+<status status="PASS" starttime="20221001 03:54:08.693" endtime="20221001 03:54:08.823"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 03:54:13.824" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 03:54:08.823" endtime="20221001 03:54:13.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>XPATH://*[@id="__next"]/main/div[2]/div[2]/form/button/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 03:54:13.824" level="INFO">Clicking element 'XPATH://*[@id="__next"]/main/div[2]/div[2]/form/button/div[2]'.</msg>
+<status status="PASS" starttime="20221001 03:54:13.824" endtime="20221001 03:54:13.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 03:54:15.913" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221001 03:54:13.911" endtime="20221001 03:54:15.913"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/main/div[2]/div[2]/form/label/div/div[1]/input</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221001 03:54:15.913" endtime="20221001 03:54:15.937"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/main/div[2]/div[2]/form/label/div/div[1]/input</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221001 03:54:15.937" level="INFO">Typing password into text field '//*[@id="__next"]/main/div[2]/div[2]/form/label/div/div[1]/input'.</msg>
+<msg timestamp="20221001 03:54:15.968" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221001 03:54:16.009" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221001 03:54:15.937" endtime="20221001 03:54:16.009"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/main/div[2]/div[2]/button[2]/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 03:54:16.009" level="INFO">Clicking element '//*[@id="__next"]/main/div[2]/div[2]/button[2]/div[2]'.</msg>
+<status status="PASS" starttime="20221001 03:54:16.009" endtime="20221001 03:54:16.053"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:07.634" endtime="20221001 03:54:16.053"/>
+</kw>
+<kw name="Mobile Phone Search" library="ChoosingFromStore">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/span</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 03:54:16.054" endtime="20221001 03:54:18.230"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/span</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 03:54:18.230" level="INFO">Simulating Mouse Over on element '//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/span'.</msg>
+<status status="PASS" starttime="20221001 03:54:18.230" endtime="20221001 03:54:18.598"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[1]/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 03:54:18.598" level="INFO">Simulating Mouse Over on element '//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[1]/a'.</msg>
+<status status="PASS" starttime="20221001 03:54:18.598" endtime="20221001 03:54:19.973"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[1]/div[1]/ul/a[2]/span</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221001 03:54:19.973" level="INFO">Sending key(s) ('[Return]',) to //*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[1]/div[1]/ul/a[2]/span element.</msg>
+<msg timestamp="20221001 03:54:20.593" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20221001 03:54:19.973" endtime="20221001 03:54:20.714"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:16.054" endtime="20221001 03:54:20.714"/>
+</kw>
+<kw name="Search By Filter" library="ChoosingFromStore">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[2]/div/div/div[1]/div[6]/div/div[2]/div/div/label[1]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 03:54:20.716" endtime="20221001 03:54:21.399"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[2]/div/div/div[1]/div[6]/div/div[2]/div/div/label[1]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 03:54:21.400" level="INFO">Clicking element '//*[@id="plpLayoutContainer"]/section[2]/div/div/div[1]/div[6]/div/div[2]/div/div/label[1]/div'.</msg>
+<status status="PASS" starttime="20221001 03:54:21.399" endtime="20221001 03:54:21.725"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 03:54:23.725" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221001 03:54:21.725" endtime="20221001 03:54:23.725"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@href="/product/dkp-6460974/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%A7%D9%BE%D9%84-%D9%85%D8%AF%D9%84-iphone-13-pro-max-a2644-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-256-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-6-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA/"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 03:54:23.726" level="INFO">Clicking element '//a[@href="/product/dkp-6460974/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%A7%D9%BE%D9%84-%D9%85%D8%AF%D9%84-iphone-13-pro-max-a2644-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-256-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-6-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA/"]'.</msg>
+<status status="PASS" starttime="20221001 03:54:23.725" endtime="20221001 03:54:23.864"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>iPhone 13 Pro Max A2644</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221001 03:54:26.430" level="INFO">Current page contains text 'iPhone 13 Pro Max A2644'.</msg>
+<status status="PASS" starttime="20221001 03:54:23.865" endtime="20221001 03:54:26.431"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:20.716" endtime="20221001 03:54:26.431"/>
+</kw>
+<kw name="Select A Iphon13 And Add To Cart" library="BuyFromStore">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221001 03:54:26.433" endtime="20221001 03:54:26.444"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div[1]/div[8]/div/div[2]/div[3]/button[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div[1]/div[8]/div/div[2]/div[3]/button[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221001 03:54:28.871" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 03:54:28.402" endtime="20221001 03:54:28.871"/>
+</kw>
+<msg timestamp="20221001 03:54:28.874" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<status status="FAIL" starttime="20221001 03:54:26.445" endtime="20221001 03:54:28.875"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:26.444" endtime="20221001 03:54:28.875"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div[1]/div[8]/div/div[2]/div[3]/button[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 03:54:28.875" endtime="20221001 03:54:28.967"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Press Keys</arg>
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div[1]/div[8]/div/div[2]/div[3]/button[1]</arg>
+<arg>[Return]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div[1]/div[8]/div/div[2]/div[3]/button[1]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221001 03:54:28.968" level="INFO">Sending key(s) ('[Return]',) to //*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div[1]/div[8]/div/div[2]/div[3]/button[1] element.</msg>
+<msg timestamp="20221001 03:54:29.354" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20221001 03:54:28.967" endtime="20221001 03:54:29.381"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:28.967" endtime="20221001 03:54:29.381"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:26.433" endtime="20221001 03:54:29.382"/>
+</kw>
+<kw name="IPhone13 Order Registration" library="BuyFromStore">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 03:54:31.384" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221001 03:54:29.383" endtime="20221001 03:54:31.384"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 03:54:31.385" level="INFO">Simulating Mouse Over on element '//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221001 03:54:31.384" endtime="20221001 03:54:31.678"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 03:54:33.679" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221001 03:54:31.678" endtime="20221001 03:54:33.679"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div/div/div[1]/a</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221001 03:54:33.680" level="INFO">Sending key(s) ('[Return]',) to //*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div/div/div[1]/a element.</msg>
+<msg timestamp="20221001 03:54:34.054" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20221001 03:54:33.679" endtime="20221001 03:54:34.500"/>
+</kw>
+<kw name="Mouse Out" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div/a</arg>
+<doc>Simulates moving the mouse away from the element ``locator``.</doc>
+<msg timestamp="20221001 03:54:34.501" level="INFO">Simulating Mouse Out on element '//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221001 03:54:34.500" endtime="20221001 03:54:35.409"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:29.383" endtime="20221001 03:54:35.409"/>
+</kw>
+<kw name="Verify In The Shopping" library="DeletingProducts">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 03:54:40.412" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 03:54:35.410" endtime="20221001 03:54:40.412"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div/ul[1]/li[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221001 03:54:40.426" level="INFO">Current page contains element '//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div/ul[1]/li[1]'.</msg>
+<status status="PASS" starttime="20221001 03:54:40.412" endtime="20221001 03:54:40.426"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:35.410" endtime="20221001 03:54:40.426"/>
+</kw>
+<kw name="Delete Product" library="DeletingProducts">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div/ul[2]/li/div[1]/div/section/div/div/div[2]/div[2]/div[1]/div[3]/div/button[2]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221001 03:54:40.427" level="INFO">Sending key(s) ('[Return]',) to //*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div/ul[2]/li/div[1]/div/section/div/div/div[2]/div[2]/div[1]/div[3]/div/button[2] element.</msg>
+<msg timestamp="20221001 03:54:40.735" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20221001 03:54:40.427" endtime="20221001 03:54:40.752"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:40.426" endtime="20221001 03:54:40.752"/>
+</kw>
+<kw name="Verify Delete Product" library="DeletingProducts">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 03:54:45.755" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 03:54:40.753" endtime="20221001 03:54:45.755"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>سبد خرید شما خالی است!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221001 03:54:45.773" level="INFO">Current page contains text 'سبد خرید شما خالی است!'.</msg>
+<status status="PASS" starttime="20221001 03:54:45.755" endtime="20221001 03:54:45.774"/>
+</kw>
+<status status="PASS" starttime="20221001 03:54:40.753" endtime="20221001 03:54:45.774"/>
+</kw>
+<doc>Deleting Products From Cart</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20221001 03:53:29.963" endtime="20221001 03:54:45.775"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221001 03:54:45.776" endtime="20221001 03:54:49.196"/>
+</kw>
+<doc>Deleting Products From Cart</doc>
+<status status="PASS" starttime="20221001 03:53:29.695" endtime="20221001 03:54:49.196"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="DeletingProductsFromCart">DeletingProductsFromCart</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221001 03:53:29.953" level="ERROR">Error in file 'C:\Users\n.karimian\PycharmProjects\RobotFW2\Resources\BuyFromStore.robot' on line 4: Importing library 'BuiltInLibrary' failed: ModuleNotFoundError: No module named 'BuiltInLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\projects\Scripts\robot.exe
+  d:\projects\python37.zip
+  d:\projects\DLLs
+  d:\projects\lib
+  d:\projects
+  d:\projects\lib\site-packages</msg>
+<msg timestamp="20221001 03:53:29.958" level="ERROR">Error in file 'C:\Users\n.karimian\PycharmProjects\RobotFW2\Resources\DeletingProducts.robot' on line 4: Importing library 'BuiltInLibrary' failed: ModuleNotFoundError: No module named 'BuiltInLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\projects\Scripts\robot.exe
+  d:\projects\python37.zip
+  d:\projects\DLLs
+  d:\projects\lib
+  d:\projects
+  d:\projects\lib\site-packages</msg>
+</errors>
+</robot>
